@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"""magic method"""
+"""
+__init__ dunder method for the models directory
+"""
+from models.engine.file_storage import FileStorage
 
-from models.engine.file_storage import Filestorage
 
-storage = Filestorage()
+storage = FileStorage()
 storage.reload()
